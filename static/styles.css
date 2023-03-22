@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 3%;
+}
 form {
   display: flex;
   align-items: center;
@@ -28,4 +36,24 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #3e8e41;
+}
+
+.files {
+  display: block;
+  margin: 7%;
+}
+
+.err {
+  color: red;
+  font-weight: bold;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.video {
+  margin: 10px;
 }
