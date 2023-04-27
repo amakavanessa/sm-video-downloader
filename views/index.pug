@@ -17,9 +17,9 @@ body
     div.video-gallery
       each file in files
         div.video
-          //- - var thumbnail = file.replace('mp4', 'png')
-          //- img(src=`thumbnails/video497.png`, alt="gpee")
+          
           video(width="250" height="200" controls="false")
-            source(src=`downloaded files/${file}`, type="video/mp4")
+            source(src=file.url, type="video/mp4")
+          
             p Your browser does not support the video tag.
             span= files
